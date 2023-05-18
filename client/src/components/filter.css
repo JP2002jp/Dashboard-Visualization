@@ -1,0 +1,112 @@
+.filter-menu {
+  background: azure;
+  padding: 20px;
+}
+/* .filter-menu-button {
+
+  position: relative;
+} */
+
+.top {
+  display: flex;
+  align-items: center;
+}
+.header {
+  margin-left: 30px;
+}
+.filter-menu-button {
+  padding: 9px;
+  height: fit-content;
+  font-size: 20px;
+}
+.f-head {
+  z-index: 100;
+  width: 90%;
+  display: flex;
+  position: absolute;
+  top: 0px;
+  padding: 10px;
+  padding-top: 0;
+  background: azure;
+  align-items: center;
+}
+.fa-times {
+  margin-left: auto;
+}
+/* .filter-menu-dropdown .head {
+  position: absolute;
+  top: 0px;
+  left: 10px;
+}
+.filter-menu-dropdown .fa-times {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+} */
+.menu {
+  position: relative;
+  padding: 30px;
+  overflow-y: scroll;
+  height: calc(100vh - 110px);
+  margin-top: 50px;
+}
+.filter-menu-dropdown {
+  z-index: 2;
+  top: 0;
+  left: -400px;
+
+  position: fixed;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  align-items: center;
+  height: 100vh;
+
+  background: azure;
+  transition: all 0.5s ease-in-out;
+}
+.filter-menu-dropdown.animation {
+  left: 0;
+}
+.dropdown-container {
+  width: 300px;
+}
+.filter-apply {
+  margin-top: 10px;
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 14px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 80px;
+  padding: 11px 15px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: font-size 0.5s ease;
+}
+
+.filter-apply:active,
+.filter-apply:hover {
+  outline: 0;
+  font-size: 20px;
+  padding: 10px 8px;
+}
+
+@media (min-width: 768px) {
+  .filter-apply {
+    font-size: 14px;
+    min-width: 80px;
+  }
+}

@@ -1,4 +1,7 @@
-In the .env file, add a new line with the following format:Replace your-mongo-url with the actual MongoDB connection URL you want to use(data in collection-(datas)).
-Install the necessary dependencies by running npm install in the project directory.
-Start the development server by running npm start.
-Open your browser and navigate to http://localhost:5000.
+1. In the .env file, replace your-mongo-url with the actual MongoDB connection URL you want to use(import json data in collection-(datas))
+
+2. Install the necessary dependencies by running npm install in the project director.
+
+3. Start the development server by running npm start.
+
+4. Open your browser and navigate to http://localhost:5000.
